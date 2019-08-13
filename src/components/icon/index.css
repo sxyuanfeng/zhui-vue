@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'zhuiicon';
+  /* project id 1005355 */
+  src: url("//at.alicdn.com/t/font_1005355_2fpanlq1ufi.eot");
+  src: url("//at.alicdn.com/t/font_1005355_2fpanlq1ufi.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1005355_2fpanlq1ufi.woff2") format("woff2"), url("//at.alicdn.com/t/font_1005355_2fpanlq1ufi.woff") format("woff"), url("//at.alicdn.com/t/font_1005355_2fpanlq1ufi.ttf") format("truetype"), url("//at.alicdn.com/t/font_1005355_2fpanlq1ufi.svg#iconfont") format("svg");
+}
+
+.zhuiicon {
+  display: inline-block;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: -0.15em;
+}
+
+.zhuiicon::before {
+  font-family: 'zhuiicon' !important;
+  display: block;
+  box-sizing: border-box;
+}
+
+.zhuiicon-music::before {
+  content: '\e636';
+}
+
+.zhuiicon-email::before {
+  content: '\e635';
+}
+
+.zhuiicon-search::before {
+  content: '\e634';
+}
+
+.zhuiicon-message::before {
+  content: '\e633';
+}
+
+.zhuiicon-camera::before {
+  content: '\e632';
+}
+
+.zhuiicon-picture::before {
+  content: '\e631';
+}
+
+.zhuiicon-download::before {
+  content: '\e630';
+}
+
+.zhuiicon-refresh::before {
+  content: '\e62f';
+}
+
+.zhuiicon-store::before {
+  content: '\e62e';
+}
+
+.zhuiicon-delete::before {
+  content: '\e62d';
+}
+
+.zhuiicon-social::before {
+  content: '\e62c';
+}
+
+.zhuiicon-index::before {
+  content: '\e62b';
+}
+
+.zhuiicon-setting::before {
+  content: '\e62a';
+}
+
+.zhuiicon-time::before {
+  content: '\e629';
+}
+
+.zhuiicon-menu::before {
+  content: '\e628';
+}
+
+.zhuiicon-calculator::before {
+  content: '\e627';
+}
+
+.zhuiicon-edit::before {
+  content: '\e626';
+}
+
+.zhuiicon-person::before {
+  content: '\e625';
+}
+
+.zhuiicon-achievement::before {
+  content: '\e624';
+}
+
+.zhuiicon-bell::before {
+  content: '\e623';
+}
