@@ -1,14 +1,14 @@
 ---
-title: 'Alert'
+title: 'Loading'
 sidebarDepth: 2
 ---
-# Alert
+# Loading
 
 <ClientOnly>
-  <zhui-alert/>
+  <zhui-loading/>
 <font size=5>Attributes</font>
 | 参数| 说明 | 类型 | 可选值 | 默认值 |
 | :------ | ------ | ------ | ------ | ------ |
-| theme | 主题颜色 | string |- | #1770a8 |
-| closable | 可关闭 | boolean | closable | false |
+| show | 是否显示 | boolean | - | true |
+| global | 覆盖整个页面 | boolean | - | false |
 </ClientOnly>

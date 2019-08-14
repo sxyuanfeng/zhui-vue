@@ -27,7 +27,9 @@ export default {
     },
     methods: {
         onClose() {
-            this.visiable = false;
+            if (this.closable === true) {
+                this.visiable = false;
+            }
         }
     }
 }

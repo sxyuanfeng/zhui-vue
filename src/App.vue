@@ -20,6 +20,10 @@
     <preswitch></preswitch>
     <br>
     <prerate></prerate>
+    <br>
+    <preradio></preradio>
+    <br>
+    <prewatermark></prewatermark>
   </div>
 </template>
 
@@ -35,6 +39,8 @@ import precheckbox from './components/checkbox/precheckbox';
 import preinput from './components/input/preinput';
 import preswitch from './components/switch/preswitch';
 import prerate from './components/rate/prerate';
+import preradio from './components/radio/preradio';
+import prewatermark from './components/watermark/prewatermark';
 
 export default {
   name: 'app',
@@ -50,6 +56,8 @@ export default {
     preinput,
     preswitch,
     prerate,
+    preradio,
+    prewatermark,
   }
 }
 </script>

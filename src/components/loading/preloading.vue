@@ -1,5 +1,5 @@
 <template>
-    <z-loading :show="visiable">加载中...</z-loading>
+    <z-loading :show="true">加载中...</z-loading>
 </template>
 
 <script>
@@ -9,10 +9,5 @@ export default {
     components: {
         'z-loading': Loading,
     },
-    data() {
-        return {
-            visiable: true,
-        }
-    }
 }
 </script>

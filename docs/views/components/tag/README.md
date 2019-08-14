@@ -1,16 +1,14 @@
 ---
-title: 'Icon'
+title: 'Tag'
 sidebarDepth: 2
 ---
-# Icon
+# Tag
 
 <ClientOnly>
-  <zhui-icon/>
+  <zhui-tag/>
 <font size=5>Attributes</font>
 | 参数| 说明 | 类型 | 可选值 | 默认值 |
 | :------ | ------ | ------ | ------ | ------ |
-| name | 图标类型 | string | - | - |
+| closable | 可关闭 | boolean | - | false |
 | color | 颜色 | string | - | - |
-| size | 大小 | string | - | - |
-| loading | 旋转 | boolean | loading | false |
 </ClientOnly>
