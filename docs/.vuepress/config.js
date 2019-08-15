@@ -30,6 +30,8 @@ module.exports = {
             '/views/components/loading/',
             '/views/components/tag/',
             '/views/components/card/',
+            '/views/components/breadcrumb/',
+            '/views/components/checkbox/',
           ]
         },
         {

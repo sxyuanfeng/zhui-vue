@@ -1,6 +1,7 @@
 <template>
-    <div class="zhui-watermark" :width="width" :height="height">
-        <z-watermarksvg>
+    <div class="zhui-watermark" :style="{'width': width, 'height': height}">
+        <img :style="{'width': width, 'height': height}" :src="src">
+        <z-watermarksvg class="zhui-watermark-svg">
             <slot></slot>
         </z-watermarksvg>
     </div>
@@ -13,9 +14,22 @@ export default {
     props: {
         width: '',
         height: '',
+        src: '',
     },
     components: {
         'z-watermarksvg': WaterMarkSvg,
     }
 }
 </script>
+
+<style lang="scss">
+.zhui-watermark {
+    position: relative;
+
+    > .zhui-watermark-svg {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+}
+</style>

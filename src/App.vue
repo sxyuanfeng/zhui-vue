@@ -24,6 +24,8 @@
     <preradio></preradio>
     <br>
     <prewatermark></prewatermark>
+    <br>
+    <preprogress></preprogress>
   </div>
 </template>
 
@@ -41,6 +43,7 @@ import preswitch from './components/switch/preswitch';
 import prerate from './components/rate/prerate';
 import preradio from './components/radio/preradio';
 import prewatermark from './components/watermark/prewatermark';
+import preprogress from './components/progress/preprogress';
 
 export default {
   name: 'app',
@@ -58,6 +61,7 @@ export default {
     prerate,
     preradio,
     prewatermark,
+    preprogress,
   }
 }
 </script>

@@ -1,0 +1,105 @@
+@import '../color.scss';
+
+.zhui-steps {
+  display: flex;
+}
+.zhui-step {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+  line-height: 1.6;
+  
+  &-num {
+    box-sizing: border-box;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    line-height: 2.1;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px dashed $muyun;
+    box-shadow: 0 0 0 2px #fff,0 0 0 4px $muyun;
+    color: $muyun;
+    margin: 0 auto;
+    z-index: 2;
+    transition: all .1s linear;
+    cursor: pointer;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -22px;
+      left: 11px;
+      width: 2px;
+      height: 18px;
+      background: $muyun;
+    }
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+
+      + .zhui-step-title {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+
+  &-title {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    transition: all .1s linear;
+  }
+
+  &-tail {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    z-index: 1;
+    transition: all .3s linear;
+  }
+
+  &-finished {
+    .zhui-step-tail {
+      background: $muyun;
+    }
+  }
+
+  &-current, &-wait {
+    .zhui-step-tail {
+      background: $yuanshan;
+    }
+  }
+  
+  &-wait {
+    .zhui-step-num {
+      border-color: $yuanshan;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 4px $yuanshan;
+      color: $yuanshan;
+
+      &::after {
+        background: $yuanshan;
+      }
+    }
+
+    color: $yuanshan;
+  }
+
+  &-error {
+    .zhui-step-num {
+      border-color: $meihong;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 4px $meihong;
+      color: $meihong;
+
+      &::after {
+        background: $meihong;
+      }
+    }
+
+    color: $meihong;
+  }
+}
