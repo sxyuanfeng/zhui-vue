@@ -32,6 +32,9 @@ module.exports = {
             '/views/components/card/',
             '/views/components/breadcrumb/',
             '/views/components/checkbox/',
+            '/views/components/radio/',
+            '/views/components/switch/',
+            '/views/components/rate/',
           ]
         },
         {

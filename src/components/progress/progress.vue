@@ -44,6 +44,7 @@ export default {
 
 .zhui-progress {
   &-wrapper {
+    font-family: 'STKaiti';
     margin-bottom: 42px;
     height: 4px;
     border-radius: 4px;

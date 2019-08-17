@@ -26,6 +26,12 @@
     <prewatermark></prewatermark>
     <br>
     <preprogress></preprogress>
+    <br>
+    <presteps></presteps>
+    <br>
+    <prebadge></prebadge>
+    <br>
+    <prenotify></prenotify>
   </div>
 </template>
 
@@ -44,6 +50,9 @@ import prerate from './components/rate/prerate';
 import preradio from './components/radio/preradio';
 import prewatermark from './components/watermark/prewatermark';
 import preprogress from './components/progress/preprogress';
+import presteps from './components/steps/presteps';
+import prebadge from './components/badge/prebadge';
+import prenotify from './components/notify/prenotify';
 
 export default {
   name: 'app',
@@ -62,6 +71,9 @@ export default {
     preradio,
     prewatermark,
     preprogress,
+    presteps,
+    prebadge,
+    prenotify,
   }
 }
 </script>

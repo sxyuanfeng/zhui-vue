@@ -1,0 +1,116 @@
+<template>
+    <span class="zhui-badge">
+        <slot></slot>
+        <div class="zhui-badge-wrapper">
+            <sup v-for="n in 3" :key="n.id" class="zhui-badge-leaf zhui-badge-leaf-outer"></sup>
+            <sup v-for="n in 3" :key="n.id" class="zhui-badge-leaf zhui-badge-leaf-inner"></sup>
+            <span class="zhui-badge-content">{{computedContent}}</span>
+        </div>
+    </span>
+</template>
+
+<script>
+export default {
+    props: {
+        content: {
+            type: String | Number,
+        }
+    },
+    computed: {
+        computedContent() {
+            if (typeof this.content === 'string') {
+                return this.content.slice(0, 1);
+            } else {
+                return (this.content+'').slice(0,2);
+            }
+        }
+    }
+}
+</script>
+
+<style lang="scss">
+$radius: 2px 20px;
+$width: 12px;
+$height: 12px;
+$boxShadow: -5px -5px 10px 3px rgba(0,0,0,0.06);
+
+.zhui-badge {
+  font-family: 'STKaiti';
+  position: relative;
+  display: inline-block;
+
+  &-wrapper {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 1;
+  }
+
+  &-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -11px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    background: #fecc11;
+    color: #fff;
+    border-radius: 50%;
+    transform: scale(0.8);
+  }
+
+  &-leaf {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    display: flex;
+    height: $height;
+    width: $width;
+    background: #fff;
+    border-radius: $radius;
+    transform-origin: bottom right;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: $height;
+      width: $width;
+      background: #fff;
+      border-radius: $radius;
+      transform-origin: bottom right;
+    }
+
+    &-outer{
+      &::after {
+        transform: rotate(60deg);
+      }
+    }
+    
+    &-inner {
+      box-shadow: $boxShadow;
+      
+      &::after {
+        transform: rotate(60deg);
+        box-shadow: $boxShadow;
+      }
+    }
+
+    @for $i from 1 through 3 {
+      &-outer:nth-child(#{$i}) {
+        transform: rotate(($i - 1) * 120deg);
+      }
+    }
+
+    @for $i from 4 through 6 {
+      &-inner:nth-child(#{$i}) {
+        transform: rotate(($i - 4) * 120deg + 30deg);
+      }
+    }
+  }
+}
+</style>
