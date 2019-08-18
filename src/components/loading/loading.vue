@@ -9,6 +9,7 @@
 
 <script>
 export default {
+    name: 'ZLoading',
     props: {
         global: {
             type: Boolean,

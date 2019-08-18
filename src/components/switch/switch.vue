@@ -9,8 +9,11 @@
 
 <script>
 export default {
+    name: 'ZSwitch',
     props: {
-        text: '',
+        text: {
+            type: String,
+        },
         checked: {
           type: Boolean,
           default: false,
@@ -34,6 +37,7 @@ export default {
             if (this.theme !== 'ganglan') {
                 return 'zhui-switch-' + this.theme;
             }
+            return 0;
         },
     },
     watch: {

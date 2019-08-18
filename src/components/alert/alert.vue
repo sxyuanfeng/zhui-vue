@@ -9,6 +9,7 @@
 
 <script>
 export default {
+    name: 'ZAlert',
     props: {
         theme: {
             type: String,
@@ -37,6 +38,7 @@ export default {
             if (this.theme !== '') {
                 return 'zhui-alert-wrapper-' + this.theme;
             }
+            return 0;
         },
     }
 }

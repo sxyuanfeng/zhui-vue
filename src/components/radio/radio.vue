@@ -8,12 +8,15 @@
 
 <script>
 export default {
+    name: 'ZRadio',
     model: {
         prop: 'model',
         event: 'change',
     },
     props: {
-        model: '',
+        model: {
+            type: String,
+        },
         name: {
             type: String,
             default: '',
@@ -40,6 +43,7 @@ export default {
             if (this.theme !== undefined) {
                 return 'zhui-radio-' + this.theme;
             }
+            return 0;
         },
     },
     methods: {

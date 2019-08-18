@@ -10,12 +10,16 @@
 
 <script>
 export default {
+    name: 'ZCheckbox',
     model: {
         prop: 'checked',
         event: 'change'
     },
     props: {
-        checked: Boolean,
+        checked: {
+            type: Boolean,
+            default: false,
+        },
         disabled: {
             type: Boolean,
             default: false,

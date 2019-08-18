@@ -11,6 +11,7 @@
 
 <script>
 export default {
+    name: 'ZBadge',
     props: {
         content: {
             type: String | Number,

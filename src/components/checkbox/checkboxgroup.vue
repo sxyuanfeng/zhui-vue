@@ -8,6 +8,7 @@
 import CheckBox from './checkbox';
 
 export default {
+    name: 'ZCheckboxgroup',
     components: {
         'z-checkbox': CheckBox,
     },

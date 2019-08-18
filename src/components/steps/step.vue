@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: 'ZStep',
     props: {
         stepNum: {
             type: Number,
@@ -32,6 +33,7 @@ export default {
             if (this.stepNum === this.length) {
                 return true;
             }
+            return 0;
         },
         isCurrent() {
             if (this.current === this.stepNum) {

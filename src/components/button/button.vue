@@ -6,6 +6,7 @@
 
 <script>
 export default {
+    name: 'ZButton',
     props: {
       theme: {
         type: String,
@@ -40,6 +41,7 @@ export default {
         if (this.outline) {
           return 'zhui-btn-' + this.theme + '-outline';
         }
+        return 0;
       },
     },
 }

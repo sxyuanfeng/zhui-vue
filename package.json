@@ -1,10 +1,15 @@
 {
   "name": "zhui-vue",
   "version": "0.1.0",
-  "private": true,
+  "description": "A Vue Components Lib",
+  "main": "./dist/zhui.umd.js",
+  "author": "yuanfengc",
+  "private": false,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name zhui ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"

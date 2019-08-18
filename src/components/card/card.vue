@@ -18,15 +18,24 @@
 
 <script>
 export default {
+    name: 'ZCard',
     props: {
-        theme: '',
-        title: '',
+        theme: {
+          type: String,
+        },
+        title: {
+          type: String,
+        },
         underline: {
             type: Boolean,
             default: false,
         },
-        cornerLeft: '',
-        cornerRight: '',
+        cornerLeft: {
+          type: String,
+        },
+        cornerRight: {
+          type: String,
+        },
         width: {
             type: String,
         },

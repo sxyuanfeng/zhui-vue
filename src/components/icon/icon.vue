@@ -4,6 +4,7 @@
 
 <script>
 export default {
+    name: 'ZIcon',
     props: {
         name: {
             type: String,

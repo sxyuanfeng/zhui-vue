@@ -6,6 +6,7 @@
 
 <script>
 export default {
+    name: 'ZRadiogroup',
     props: {
         column: {
             type: Boolean,

@@ -15,6 +15,7 @@
 import Icon from '../icon/icon';
 
 export default {
+    name: 'ZInput',
     model: {
         prop: 'value',
         event: 'change',
@@ -23,9 +24,15 @@ export default {
         'z-icon': Icon,
     },
     props: {
-        placeholder: '',
-        width: '',
-        value: '',
+        placeholder: {
+            type: String,
+        },
+        width: {
+            type: String,
+        },
+        value: {
+            type: String,
+        },
         theme: {
             type: String,
             default: 'meihong'

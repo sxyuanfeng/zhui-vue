@@ -15,8 +15,12 @@
 import getRotate from './getRotate';
 
 export default {
+    name: 'ZProgress',
     props: {
-        percent: 0,
+        percent: {
+          type: Number,
+          default: 0,
+        },
         status: {
             type: String,
             default: '',

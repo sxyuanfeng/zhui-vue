@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: 'ZTag',
     props: {
         closable: {
             type: Boolean,

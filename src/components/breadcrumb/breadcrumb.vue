@@ -9,6 +9,7 @@
 import BreadCrumbItem from './breadcrumbitem';
 
 export default {
+    name: 'ZBreadcrumb',
     components: {
         'z-breadcrumbitem': BreadCrumbItem,
     },

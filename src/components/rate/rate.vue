@@ -8,6 +8,7 @@
 import RateItem from './rateitem';
 
 export default {
+    name: 'ZRate',
     props: {
       nums: {
         type: Number,

@@ -11,10 +11,17 @@
 import WaterMarkSvg from './watermarksvg';
 
 export default {
+    name: 'ZWatermark',
     props: {
-        width: '',
-        height: '',
-        src: '',
+        width: {
+            type: String,
+        },
+        height: {
+            type: String,
+        },
+        src: {
+            type: String,
+        },
     },
     components: {
         'z-watermarksvg': WaterMarkSvg,

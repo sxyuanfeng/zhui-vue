@@ -6,14 +6,21 @@
 
 <script>
 export default {
+    name: 'ZTextarea',
     model: {
         prop: 'value',
         event: 'change',
     },
     props: {
-        placeholder: '',
-        width: '',
-        value: '',
+        placeholder: {
+            type: String,
+        },
+        width: {
+            type: String,
+        },
+        value: {
+            type: String,
+        },
         theme: {
             type: String,
             default: 'meihong'
@@ -28,7 +35,7 @@ export default {
             if (this.theme !== 'meihong') {
                 return 'zhui-input-'+this.theme;
             } else {
-                return;
+                return 0;
             }
         },
         inputListeners() {

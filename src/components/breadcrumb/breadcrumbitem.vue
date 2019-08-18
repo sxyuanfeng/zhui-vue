@@ -5,9 +5,14 @@
 
 <script>
 export default {
+    name: 'ZBreadcrumbitem',
     props: {
-        value: '',
-        href: '',
+        value: {
+            type: String
+        },
+        href: {
+            type: String,
+        },
     }
 }
 </script>
