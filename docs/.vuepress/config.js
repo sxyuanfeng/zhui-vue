@@ -22,6 +22,12 @@ module.exports = {
           ]
         }, 
         {
+          title: '配色',
+          children: [
+            '/views/design/color/',
+          ]
+        },
+        {
           title: '组件',
           children: [
             '/views/components/icon/',
@@ -35,12 +41,10 @@ module.exports = {
             '/views/components/radio/',
             '/views/components/switch/',
             '/views/components/rate/',
-          ]
-        },
-        {
-          title: '配色',
-          children: [
-            '/views/design/color/',
+            '/views/components/badge/',
+            '/views/components/input/',
+            '/views/components/progress/',
+            '/views/components/steps/',
           ]
         },
       ],

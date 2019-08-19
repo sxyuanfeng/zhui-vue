@@ -22,7 +22,11 @@ export default {
             if (typeof this.content === 'string') {
                 return this.content.slice(0, 1);
             } else {
-                return (this.content+'').slice(0,2);
+                if (this.content < 100) {
+                  return this.content;
+                } else {
+                  return 99;
+                }
             }
         }
     }
