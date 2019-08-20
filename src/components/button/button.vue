@@ -1,5 +1,5 @@
 <template>
-    <button class="zhui-btn" :class="['zhui-btn-'+theme, {'zhui-btn-loading': loading}, computedOutline, {'zhui-btn-disabled': disabled}, {'zhui-btn-round': round}, 'zhui-btn-kong-'+kong, {'zhui-btn-block': block}]">
+    <button class="zhui-btn" :class="['zhui-btn-'+theme, {'zhui-btn-loading': loading}, computedOutline, {'zhui-btn-disabled': disabled}, {'zhui-btn-round': round}, 'zhui-btn-kong-'+kong, {'zhui-btn-block': block}]" v-on="inputListeners">
         <slot></slot>
     </button>
 </template>
@@ -37,12 +37,18 @@ export default {
       }
     },
     computed: {
-      computedOutline() {
-        if (this.outline) {
-          return 'zhui-btn-' + this.theme + '-outline';
+        computedOutline() {
+            if (this.outline) {
+                return 'zhui-btn-' + this.theme + '-outline';
+            }
+            return 0;
+        },
+        inputListeners() {
+            var vm = this;
+            return Object.assign({}, 
+                this.$listeners,
+            )
         }
-        return 0;
-      },
     },
 }
 </script>

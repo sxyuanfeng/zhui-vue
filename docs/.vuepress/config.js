@@ -45,6 +45,8 @@ module.exports = {
             '/views/components/input/',
             '/views/components/progress/',
             '/views/components/steps/',
+            '/views/components/watermark/',
+            '/views/components/notify/',
           ]
         },
       ],
